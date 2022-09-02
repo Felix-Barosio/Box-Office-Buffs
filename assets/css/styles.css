@@ -213,7 +213,7 @@ body {
 
 .form-control::placeholder {
     font-size: 1.3vw;
-    color: #ceb736;
+    color: #268da3;
 }
 
 .search-item {
@@ -221,14 +221,6 @@ body {
     justify-content: stretch;
     align-items: stretch;
     position: relative;
-}
-
-.search-item .form-control {
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    border-radius: 1.3vw;
-    border: 0.5vw solid #268da3;
-    outline: none;
 }
 
 .search-list {
