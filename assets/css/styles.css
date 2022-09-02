@@ -535,8 +535,9 @@ input[type="submit"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.9vw;
+    font-size: 2.1vw;
     position: relative;
+    font-family: 'Oleo Script', cursive;
 }
 
 .about h3::before {
@@ -599,12 +600,13 @@ ul li {
 }
 
 .cont2 h4 {
-    font-size: 1.8vw;
+    font-size: 2.1vw;
     margin-bottom: 20px;
     color: #000;
     font-weight: 600;
     position: relative;
     right: -40px;
+    font-family: 'Oleo Script', cursive;
 
 }
 
