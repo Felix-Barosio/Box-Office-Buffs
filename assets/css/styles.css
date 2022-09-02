@@ -527,17 +527,18 @@ input[type="submit"] {
     margin-right: 1.1vw;
     background-color: #268da3;
     border-radius: 1.1vw;
-    padding: 1.5vw;
+    padding: 1.4vw 1.8vw 1.0vw;
     margin-bottom: 0.2vw;
 }
 
 .about h3 {
     display: flex;
+    text-align: center;
     justify-content: center;
-    align-items: center;
     font-size: 2.1vw;
     position: relative;
     font-family: 'Oleo Script', cursive;
+    font-weight: 300;
 }
 
 .about h3::before {
@@ -554,7 +555,7 @@ input[type="submit"] {
 .about p {
     display: flex;
     justify-content: center;
-    align-items: center;
+    text-align: center;
     margin-left: 1.1vw;
     margin-right: 1.1vw;
     font-size: 1.3vw;
@@ -603,7 +604,7 @@ ul li {
     font-size: 2.1vw;
     margin-bottom: 20px;
     color: #000;
-    font-weight: 600;
+    font-weight: 300;
     position: relative;
     right: -40px;
     font-family: 'Oleo Script', cursive;
