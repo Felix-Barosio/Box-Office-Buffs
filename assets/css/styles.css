@@ -578,6 +578,7 @@ ul li {
 
     margin: auto;
     max-width: 1150px;
+    
 }
 
 .cont2 {
@@ -589,7 +590,7 @@ ul li {
     font-size: 1.8vw;
     margin-bottom: 20px;
     color: #000;
-    font-weight: 700;
+    font-weight: 600;
     position: relative;
     right: -40px;
 
@@ -612,7 +613,7 @@ ul li {
 }
 
 .cont2 ul li a {
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     color: #000;
     text-decoration: none;
     font-weight: 400;
