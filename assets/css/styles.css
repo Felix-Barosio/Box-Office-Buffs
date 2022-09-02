@@ -100,6 +100,41 @@ body {
 /* end */
 
 /* home  section */
+.sect_1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.sect_1 h2 {
+    font-size: 2.9vw;
+
+}
+
+.sect_1 {
+    font-size: 1.9vw;
+    margin-top: 10px;
+}
+
+#yel {
+    position: absolute;
+    top: 16.3vw;
+    font-size: 4.2vw;
+    color: #268da3;
+    font-family: 'Oleo Script', cursive;
+}
+
+#best {
+    position: absolute;
+    top: 28.5vw;
+    font-size: 3.2vw;
+    color: #268da3;
+    font-family: 'Oleo Script', cursive;
+
+}
+
 .photo img {
     width: 100%;
     height: 50vw;
