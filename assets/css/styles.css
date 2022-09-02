@@ -347,6 +347,46 @@ body {
 
 /* search end */
 
+/* about section */
+.about {
+    margin-left: 1.1vw;
+    margin-right: 1.1vw;
+    background-color: #268da3;
+    border-radius: 1.1vw;
+    padding: 1.5vw;
+    margin-bottom: 0.2vw;
+}
+
+.about h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.9vw;
+    position: relative;
+}
+.about h3::before{
+    content: '';
+    position: absolute;
+    left: 44vw;
+    bottom: -0.3vw;
+    background-color: #ceb736;
+    height: 0.2vw;
+    box-sizing: border-box;
+    width: 5.9vw;
+}
+
+.about p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.1vw;
+    margin-right: 1.1vw;
+    font-size: 1.3vw;
+    width: 100%;
+}
+
+/* end */
+
 /* footer section */
 .footer {
     margin-left: 1.1vw;
