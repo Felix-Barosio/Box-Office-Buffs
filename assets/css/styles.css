@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    background-color: #f1f1f1;
+    font-family: 'Space Grotesk', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* nav section */
+#nav_bar {
+    padding: 0vw;
+    margin: 0vw;
+    overflow-x: hidden;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 3px #000;
+}
+
+#header {
+    padding: 1.5vw;
+    box-shadow: 0 0 3px #000;
+    font-size: 1.5vw;
+}
+
+#header li img {
+    width: 5.9vw;
+    margin-top: -20px;
+    margin-left: -50px;
+}
+
+#header .active {
+
+    position: relative;
+}
+
+#header .active::before{
+    content: '';
+    position: absolute;
+    left: 0.5vw;
+    bottom: 0vw;
+    background-color: #ceb736;
+    height: 0.2vw;
+    box-sizing: border-box;
+    width: 3.1vw;
+}
+
+
+#header li {
+    display: inline;
+    padding-left: 1.7vw;
+
+}
+
+#header li a {
+    text-decoration: none;
+    padding: 0.5vw;
+    transition: 0.5s ease;
+    font-size: 1.5vw;
+    color: #000;
+}
+
+#header li a:hover {
+    color: #ed661f;
+}
+
+#header ul #search a {
+    color: #ffffff;
+    font-size: 1.8vw;
+    background-color: #268da3;
+    border-radius: 1vw;
+    float: right;
+    margin-top: -0.6vw;
+
+
+}
+
+#header ul #search a:hover {
+    background-color: #3a27e4;
+}
+
+#header ul #movies a {
+    float: left;
+    font-size: 3.1vw;
+    font-family: 'Oleo Script', cursive;
+    top: -0.8vw;
+    border-radius: 1.7vw;
+    margin-top: -0.6vw;
+
+}
+
+#header ul #movies a:hover {
+    background-color: #ffffff;
+}
+
+/* end */
