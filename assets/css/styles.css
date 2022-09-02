@@ -347,6 +347,168 @@ body {
 
 /* search end */
 
+/* feddback section */
+.feed-section {
+    background-color: #268da3;
+    margin-left: 1.1vw;
+    margin-right: 1.1vw;
+    border-radius: 1.3vw;
+}
+
+.feed-section h2 {
+    font-size: 2.5vw;
+    font-family: 'Oleo Script', cursive;
+}
+
+.container {
+    width: 35%;
+    height: 55vw;
+    margin-left: 33.1vw;
+    border-radius: 1.3vw;
+    margin-bottom: 0.2vw;
+    font-size: 1.6vw;
+    margin-top: -7.5vw;
+}
+
+.content {
+    padding: 0 1em 0 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reactions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reactions p {
+    margin: 0 1rem 0 0;
+    font-size: 1.6vw;
+}
+
+.dislike {
+    font-size: 1.3vw;
+}
+
+.like {
+    font-size: 1.3vw;
+}
+
+.fa-regular {
+    cursor: pointer;
+    font-size: 1.6vw;
+}
+
+.fa-regular:hover {
+    color: #ed661f;
+}
+
+.submit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 8vh;
+    margin-bottom: 10px;
+}
+
+.icon {
+    padding: 8px;
+}
+
+.question {
+    background-color: rgb(170, 170, 170, 0.12);
+    padding: 0.4vw 0.4vw 0.4vw 1.1vw;
+    width: 60%;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.4vw;
+}
+
+
+.modal {
+    position: fixed;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(168, 168, 163, 0.9);
+}
+
+.modal-content {
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    border: 1px solid #aaaaaa;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaaaaa;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+form {
+    width: 100%;
+    padding: inherit;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.input-group input:focus {
+    outline: 0;
+}
+
+input[type="textarea"] {
+    height: 4em;
+}
+
+input[type="submit"] {
+    width: auto;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 10px;
+    background-color: #ed661f;
+    color: white;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+/* end */
+
 /* about section */
 .about {
     margin-left: 1.1vw;
@@ -364,7 +526,8 @@ body {
     font-size: 1.9vw;
     position: relative;
 }
-.about h3::before{
+
+.about h3::before {
     content: '';
     position: absolute;
     left: 44vw;
