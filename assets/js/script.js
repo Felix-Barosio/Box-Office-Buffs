@@ -81,3 +81,123 @@ function dataDetails(items) {
     </div>
     `;
 }
+
+//Feedback fetching
+
+function fetchPosts() {
+    fetch("http://localhost:3000/feedback")
+        .then((res) => res.json())
+        .then((posts) => posts.forEach((post) => renderPost(post)));
+}
+
+function renderPost(post) {
+    let content = document.createElement("div");
+    content.className = "content";
+    content.innerHTML = `   <h3><i class="fa-regular fa-user"></i> - ${post.title}</h3>
+        <p>
+            ${post.body}
+        </p>
+        <div class="icons">
+            <div class="reactions">
+                <p>
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <span class="like">${post.likes} likes</span>
+                </p>
+                <p>
+                    <i class="fa-regular fa-thumbs-down"></i> 
+                    <span class="dislike">${post.dislikes} dislikes</span>
+                </p>
+                <p>
+                    <span><i id="toggle"></i>
+                </p>
+            </div>     
+        </div>
+    `;
+    content.querySelector(".fa-thumbs-up").addEventListener("click", () => {
+        post.likes += 1;
+        console.log("It responds!!!");
+        content.querySelector(".like").textContent = ` ${post.likes} likes`;
+        updateReaction(post);
+    });
+
+    content.querySelector(".fa-thumbs-down").addEventListener("click", () => {
+        post.dislikes += 1;
+        content.querySelector(
+            ".dislike"
+        ).textContent = ` ${post.dislikes} dislikes`;
+        updateReaction(post);
+    });
+
+    const targetDiv = content.querySelector("#comments");
+    const btn = content.querySelector("#toggle");
+    btn.onclick = function () {
+        if (targetDiv.style.display !== "block") {
+            targetDiv.style.display = "block";
+        } else {
+            targetDiv.style.display = "none";
+        }
+    };
+
+    document.querySelector(".contents").appendChild(content);
+}
+
+function updateReaction(feedback) {
+    fetch(`http://localhost:3000/feedback/${feedback.id}`, {
+        method: "PATCH",
+        headers: {
+            "content-type": "application/json",
+            'Accept': "application/json",
+        },
+        body: JSON.stringify(feedback),
+    })
+        .then((res) => res.json())
+        .then((data) => console.log(data));
+}
+
+function userPost(e) {
+    e.preventDefault();
+
+    let postObj = {
+        title: e.target.post_title.value,
+        body: e.target.description.value,
+        likes: 0,
+        dislikes: 0,
+    };
+
+    savePost(postObj);
+    renderPost(postObj);
+}
+
+function savePost(postObj) {
+    fetch("http://localhost:3000/feedback", {
+        method: "POST",
+        headers: {
+            "content-type": "application/json",
+            'Accept': "application/json",
+        },
+        body: JSON.stringify(postObj),
+    })
+        .then((response) => response.json())
+        .then((data) => console.log(data));
+}
+
+document.getElementById("form").addEventListener("submit", userPost);
+
+function displayPost() {
+    fetchPosts();
+}
+displayPost();
+
+document.getElementById("question").addEventListener("click", () => {
+    document.getElementById("modal").style.display = "block";
+});
+
+document.getElementById("close").addEventListener("click", () => {
+    document.getElementById("modal").style.display = "none";
+});
+
+window.onclick = function (event) {
+    if (event.target == document.getElementById("modal")) {
+        document.getElementById("modal").style.display = "none";
+    }
+};
