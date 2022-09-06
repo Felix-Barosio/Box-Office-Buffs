@@ -569,7 +569,6 @@ input[type="submit"] {
     margin-left: 1.1vw;
     margin-right: 1.1vw;
     border-radius: 1.2vw;
-    padding: 0;
     box-sizing: border-box;
     background-color: #268da3;
 }
@@ -588,15 +587,9 @@ ul li {
     flex-wrap: wrap;
 }
 
-.footer_container {
-
-    margin: auto;
-
-}
 
 .cont2 {
-    width: 19.3vw;
-    padding: 0 1.3vw;
+    padding: 0vw 1.3vw;
 }
 
 .cont2 h4 {
@@ -605,7 +598,7 @@ ul li {
     color: #000;
     font-weight: 300;
     position: relative;
-    right: -40px;
+    right: -3.1vw;
     font-family: 'Oleo Script', cursive;
 
 }
@@ -613,7 +606,7 @@ ul li {
 .cont2 h4::before {
     content: '';
     position: absolute;
-    left: 0;
+    left: 0vw;
     bottom: -0.3vw;
     background-color: #ceb736;
     height: 0.2vw;
@@ -633,7 +626,7 @@ ul li {
 
 .cont2 ul li a:hover {
     color: #000;
-    padding-left: 7px;
+    padding-left: 1.1vw;
 }
 
 .cont2 .icon a {
@@ -641,7 +634,7 @@ ul li {
     height: 3.3vw;
     width: 3.3vw;
     background-color: rgb(255, 255, 255, 0.2);
-    margin: 0 1.1vw 1.1vw 0;
+    margin: 0vw 1.1vw 1.1vw 0vw;
     text-align: center;
     line-height: 1.1vw;
     border-radius: 50%;
@@ -652,9 +645,6 @@ ul li {
 .cont2 .icon i {
     /* color: red; */
     font-size: 1.1vw;
-    display: flex;
-    align-content: center;
-    justify-content: center;
     margin-top: 1.1vw;
 }
 
